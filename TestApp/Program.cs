@@ -79,7 +79,7 @@ namespace TestApp
             Console.WriteLine("Содержит сообщение об ошибке для поля вес: " + isWeightErrorMessagePresent);
 
             // Тест 7 - Проверка наличия текущей даты на главной странице
-            Console.WriteLine("\nТест 7: Проверка наличия текущей даты на главной странице");
+            Console.WriteLine("\nТест 7: Проверка наличия текущей даты в формате «DD.MM.YYYY» на главной странице");
             string currentDate = DateTime.Now.ToString("dd.MM.yyyy");
             bool isCurrentDatePresent = driver.PageSource.Contains(currentDate);
             Console.WriteLine("Содержит текущую дату (" + currentDate + "): " + isCurrentDatePresent);
